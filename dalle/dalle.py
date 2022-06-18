@@ -19,7 +19,7 @@ class DallE(commands.Cog):
         """Nothing to delete."""
         return
 
-    @commands.max_concurrency(10, commands.BucketType.default)
+    @commands.max_concurrency(30, commands.BucketType.default)
     @commands.command()
     @commands.guild_only()
     async def generate(self, ctx: commands.Context, *, prompt: str):
